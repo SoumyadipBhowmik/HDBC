@@ -1,0 +1,304 @@
+:root{
+    --lighter: #2A334A;
+    --darkest: #090E1A;
+    --darker: #0D1528;
+    --dark: #131A2B;
+    --red: #F42B56;
+    --purple: #741BBD;
+    --mastercard-red: #EC0014;
+    --mastercard-orange: #E95700;
+    --darker-font: #A3ADC8;
+    --name-font: #FF1E65;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--dark);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    background-color: var(--darkest);
+}
+#logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70%;
+    width: 50vw;
+    /* background-color: aliceblue; */
+}
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 700;
+    height: 100%;
+    width: 10vw;
+}
+#logo-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to left, var(--purple), var(--name-font));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+#logo-section-menu{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--darker-font);
+    font-size: large;
+}
+#logo-section-menu a{
+    color: var(--darker-font);
+    text-decoration: none;
+}
+#logo-section-menu a:hover{
+    cursor: pointer;
+    color: var(--mastercard-orange);
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 40vw;
+    color: var(--darker-font);
+    font-size: large;
+}
+#search-bar{
+    height: 70%;
+    width: 320px;
+    background-color: var(--lighter);
+    border-radius: 20px;
+    padding-left: 2%;
+    border: none;
+    color: var(--darker-font);
+    font-weight: 900;
+    outline-color: var(--red);
+}
+#profile{
+    background-color: #fff;
+    height: 80%;
+    width: 50px;
+    border-radius: 100%;
+}
+#actual-body{
+    position: relative;
+    height: 86vh;
+    width: 100%;
+    background-color: var(--dark);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+#dashboard{
+    /* display: none; */
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#welcome-message{
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    height: 15%;
+    width: 95%;
+    color: var(--darker-font);
+    font-weight: 100;
+    /* background-color: #741BBD; */
+}
+#welcome-message span{
+    color: var(--name-font);
+}
+#widget-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85%;
+    width: 95%;
+    /* background-color: #741BBD; */
+    margin: 0px auto;
+}
+.widget-holders{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 49.5%;
+    /* background-color: #090E1A; */
+}
+#accounts{
+    height: 320px;
+    width: 95%;
+    /* background-color: #741BBD; */
+}
+.card-title{
+    color: var(--darker-font);
+    padding: 15px 20px;
+    height: 50px;
+    width: 100%;
+    background-color: var(--darker);
+}
+.card-content{
+    height: 269.3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#accounts-left-part, #accounts-right-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    background-color: var(--lighter);
+    color: #A3ADC8;
+}
+#accounts-left-part{
+    width: 40%;
+}
+#accounts-right-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+    /* background-color: #A3ADC8; */
+}
+.info{
+    padding-left: 20px;
+    /* border: 1px solid red; */
+    font-size: large;
+}
+
+#dataname{
+    color: white;
+    padding-left: 20px;
+    font-size: x-large;
+}
+#databalance{
+    color: white;
+    padding-left: 20px;
+    font-size: xx-large;
+}
+#datanumber{
+    color: white;
+    padding-left: 20px;
+    font-size: large;
+}
+#card{
+    border-radius: 3px;
+    position: relative;
+    margin: 0px auto;
+    height: 73%;
+    width: 90%;
+    background: linear-gradient(to left, var(--red), var(--purple));
+}
+#card-bank-name{
+    position: absolute;
+    font-size: xx-large;
+    top: 10px;
+    left: 10px;
+}
+#card-expiry-date{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: large;
+}
+#card-holder-name{
+    position: absolute;
+    left: 10px;
+    bottom: 45px;
+}
+#card-holder-account-number{
+    font-size: x-large;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    font-weight: 900;
+}
+
+#mastercard-logo{
+    position: absolute;
+    bottom: 17px;
+    right: 0px;
+    /* background-color: #741BBD; */
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    /* background-color: #741BBD; */
+}
+#left-top-widget{
+    height: 49%;
+    width: 100%;
+    background-color: var(--lighter);
+}
+#left-bottom-widget{
+    height: 49%;
+    width: 100%;
+    background-color: var(--lighter);
+}
+
+#right{
+    height: 98.5%;
+    width: 49%;
+    background-color: var(--lighter);
+}
+#transaction{
+    display: none;
+}
+#depositMoney{
+    height: 50vh;
+    width: 50vw;
+    background-color: #2A334A;
+}
+.take-input{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.take-input input{
+    outline-color: var(--red);
+    font-size: larger;
+    padding-left: 10px;
+    height: 40px;
+    width: 300px;
+}
+.take-input button{
+    height: 40px;
+    width: 150px;
+    font-size: larger;
+    border: none;
+}
+.take-input button:hover{
+    cursor: pointer;
+    color: var(--darker-font);
+    background-color: var(--name-font);
+}
+#send-money{
+    display: none;
+}

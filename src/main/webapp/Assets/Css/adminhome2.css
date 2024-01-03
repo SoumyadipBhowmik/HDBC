@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+body{
+    position: relative;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+:root{
+    --lightest: #202125;
+    --lighter: #19d898;
+    --light: #01B075;
+    --normal:#202125;
+    --dark: #202125;
+    --darker: #0F2557;
+    --darkest: #16171B;
+}
+nav{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 10vh;
+    width: 100%;
+    background: var(--darkest);
+    padding: 0% 2%;
+}
+#logo{
+    font-size: 10vh;
+    color: var(--lighter);
+    font-weight: 900;
+    text-shadow: 0px 0px 10px var(--light);
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 10%;
+    color: white;
+}
+#menu i{
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 70%;
+
+}
+#menu i:hover{
+    box-shadow: 0px 0px 30px var(--lighter);
+    background-color: var(--light);
+}
+header{
+    position: absolute;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    min-height: 90vh;
+    width: 100%;
+    background-color: var(--darkest);
+    transition: 1s;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    height: 86.4vh;
+    width: 25vw;
+    background-color: var(--darkest);
+}
+article{
+    overflow-x: hidden;
+    height: 83.5vh;
+    width: 72vw;
+    background-color: var(--dark);
+}
+
+.taskviews{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 95%;
+    background-color: var(--normal);
+}
+.card-title{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    height: 40px;
+    width: 100%;
+    background-color:#090E1A;
+
+}
+.card-content{
+    height: 100px;
+    width: 100%;
+    background-color: #202125;
+    padding: 3vh 3vh;
+}
+#sidebar-holder{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    background-color: #202125b5;
+}
+#side-bar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 0px;
+    right: 0px;
+    width: 20vw;
+    height: 100%;
+    background-color: var(--dark);
+    padding: 1.5vh 2vh;
+    box-shadow: 0px 0px 30px var(--darkest);
+}
+#sidebar-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#sidebar-options a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+    font-weight: 900;
+    height: 7vh;
+    width: 95%;
+    color: white;
+}
+#sidebar-options a:hover{
+    border-radius: 7px;
+    box-shadow: 0px 0px 30px var(--light);
+    background: var(--lighter);
+}
+#close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4vh;
+    height: 4vh;
+    font-size: 3vh;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+}
+#close:hover{
+    background-color: var(--lighter);
+    box-shadow: 0px 0px 30px var(--light);
+}
+#sidebar-options{
+    height: 90vh;
+    width: 100%;
+    background-color: var(--normal);
+}
+
+/* Tables inside article tag */
+
+table th{
+    height: 40px;
+    font-size: larger;
+}
+table th, table td{
+    border-left: 3px solid #323337;
+    text-align: center;
+    padding: 3px 60px;
+    border-bottom: 3px solid #323337;
+}
+table td{
+    height: 50px;
+}
+.last-column{
+    padding: 0;
+}
+td button{
+    height: 40px;
+    width: 120px;
+    font-size: larger;
+    cursor: pointer;
+}
+td button:hover{
+    background-color: #FF1E65;
+    color: white;
+    border: none;
+}
+.first-column{
+    border-left: none;
+}
+.fourth-column{
+    font-size: large;
+    font-weight: 100;
+    /* color: red; */
+}
+
+
+
+
+
+
+
+
+/* Media Queries for responsiveness */
+@media screen and (width < 500px ){
+    #menu{
+        width: 20%;
+    }
+    #side-bar{
+        width: 50vw;
+    }
+}

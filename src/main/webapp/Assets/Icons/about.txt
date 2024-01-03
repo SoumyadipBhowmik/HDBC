@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Varta
+- Font Author: Copyright 2019 The Varta Project Authors (https://github.com/SorkinType/Varta)
+- Font Source: http://fonts.gstatic.com/s/varta/v21/Qw3AZQpJHj_6LzHUngWbrFkDH1x9ajkEirE-9PGLfQ.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
